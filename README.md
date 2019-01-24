@@ -1,7 +1,7 @@
 # 批量显示图片数据
 
 本网站是用来快速展示图片内容的，可以展示以下这种数据格式：
-`
+```
 http://cdn.awwni.me/k7da.jpg
 
 http://cdn.awwni.me/kfcu.jpg
@@ -38,6 +38,6 @@ http://cdn.awwni.me/me9c.jpg
 
 http://cdn.awwni.me/me9e.jpg
 
-`
+```
 
 ##DOEM 网站：[http://image.a-qpic.com/](http://image.a-qpic.com/)
