@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>批量查看图片 - 快速的查看图片内容</title>
+    <link rel="stylesheet" href="/static/css/sortable.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+  </head>
+  <body onclick="document.querySelector('#sortable').sortablejs().orderelements()">
+    <img style="display:none;" src="/static/img/LoadIng.png" alt="LoadIng">
+    <header class="htmleaf-header">
+      <h1>本网站可以快速的查看图片内容 - 节省你的时间/提高工作效率</h1>
+      <div class="htmleaf-links">
+        <span>点击右下角的按钮可以修改网站展示的内容</span>
+      </div>
+    </header>
+    <main class="sortable">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="sortable__nav nav">
+            <li>
+              <a data-sjslink="all" class="nav__link">
+                All
+              </a>
+            </li>
+          </ul>
+          <div id="sortable" class="sjs-default" style="opacity: 1;">
+
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="row">
+      <div style="float: right;margin-right: 15%;">
+        <nav aria-label="Page navigation">
+          <ul class="pagination" id="PageMenu">
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="htmleaf-links" style="padding-bottom: 20px;">
+      <span>收藏本网站 Ctrl+D 本网站仅供学习与交流,请合理使用!如果喜欢请分享出去让更多人知道</span>
+    </div>
+    <div class="img-data" data-toggle="modal" data-target="#data">
+      <img src="/static/img/data.png" alt="修改显示内容">
+    </div>
+    <div class="modal fade" id="data" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel" style="color: #111;">修改显示数据</h4>
+          </div>
+          <div class="modal-body">
+            <textarea class="form-control" rows="20" id="data-url" placeholder="这里填写你要展示的图片链接&#10;一行一条图片链接"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="show">展示数据</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+        <div id="innerdiv" style="position:absolute;">
+            <img id="bigimg" style="border:5px solid #fff;background: #f1f1f1;border-radius: 6px;" src="" />
+        </div>
+    </div>
+  </body>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/static/js/sortable.min.js"></script>
+  <script src="/static/js/jquery.lazyload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/static/js/main.js?v=201901242233"></script>
+</html>
