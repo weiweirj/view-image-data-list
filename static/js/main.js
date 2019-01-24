@@ -1,4 +1,22 @@
 var imgList=[
+  'http://cdn.awwni.me/k7da.jpg',
+  'http://cdn.awwni.me/kfcu.jpg',
+  'http://cdn.awwni.me/kguv.jpg',
+  'http://cdn.awwni.me/lhtt.jpg',
+  'http://cdn.awwni.me/lih6.jpg',
+  'http://cdn.awwni.me/lptb.jpg',
+  'http://cdn.awwni.me/m12f.jpg',
+  'http://cdn.awwni.me/m209.jpg',
+  'http://cdn.awwni.me/m2ji.jpg',
+  'http://cdn.awwni.me/m2wt.jpg',
+  'http://cdn.awwni.me/m5ic.jpg',
+  'http://cdn.awwni.me/m6dc.jpg',
+  'http://cdn.awwni.me/m6k1.jpg',
+  'http://cdn.awwni.me/m72p.jpg',
+  'http://cdn.awwni.me/m9a8.jpg',
+  'http://cdn.awwni.me/mbw0.jpg',
+  'http://cdn.awwni.me/me9c.jpg',
+  'http://cdn.awwni.me/me9e.jpg',
 ],dq=0,znum=0,pe=100;
 $(function(){
   if (sessionStorage.getItem("data")==null) {
